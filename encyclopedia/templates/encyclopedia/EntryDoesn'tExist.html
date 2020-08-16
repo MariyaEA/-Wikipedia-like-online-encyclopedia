@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }} The Entry is NOT FOUND!
+{% endblock %}
+
+{% block body %}
+    <h1><b>{{ entryTitle }}</b> DOOESN'T exist</h1>
+    <p> Click <a href="{% url 'newEntry' %}">here</a> to create your entry</p>
+
+{% endblock %}
